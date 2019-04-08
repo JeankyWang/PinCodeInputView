@@ -147,6 +147,7 @@ public class PinCodeInputView<T: UIView & ItemType>: UIControl, UITextInputTrait
             
             let (index, item) = arg
             item.itemView.isHiddenCursor = (index == cursorPosition) ? false : true
+            item.itemView.layer.borderColor = (index == cursorPosition) ? (appearance?.highlightBorderColor ?? UIColor.white).cgColor : (appearance?.textColor ?? UIColor.white).cgColor
         }
     }
     

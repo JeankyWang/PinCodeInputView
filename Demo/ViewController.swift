@@ -12,12 +12,12 @@ import PinCodeInputView
 class ViewController: UIViewController {
 
     // default item view
-    let pinCodeInputView: PinCodeInputView<ItemView> = .init(
-        digit: 6,
-        itemSpacing: 8,
-        itemFactory: {
-            return ItemView()
-    })
+//    let pinCodeInputView: PinCodeInputView<ItemView> = .init(
+//        digit: 6,
+//        itemSpacing: 8,
+//        itemFactory: {
+//            return ItemView()
+//    })
 
     // customize item view (underline)
 //    let pinCodeInputView: PinCodeInputView<UnderlineItemView> = .init(
@@ -28,12 +28,12 @@ class ViewController: UIViewController {
 //    })
 
     // customize item view (circle)
-//    let pinCodeInputView: PinCodeInputView<CircleItemView> = .init(
-//        digit: 6,
-//        itemSpacing: 8,
-//        itemFactory: {
-//            return CircleItemView()
-//    })
+    let pinCodeInputView: PinCodeInputView<CircleItemView> = .init(
+        digit: 6,
+        itemSpacing: 8,
+        itemFactory: {
+            return CircleItemView()
+    })
 
     // customize item view (password)
 //    let pinCodeInputView: PinCodeInputView<PasswordItemView> = .init(
@@ -78,7 +78,8 @@ class ViewController: UIViewController {
                 textColor: .white,
                 backgroundColor: UIColor.white.withAlphaComponent(0.3),
                 cursorColor: UIColor(red: 69/255, green: 108/255, blue: 1, alpha: 1),
-                cornerRadius: 8
+                cornerRadius: 8,
+                highlightBorderColor: UIColor.blue
             )
         )
         
