@@ -23,7 +23,7 @@ You can create an input part of PinCode to use for phone number authentication.
 
   s.author             = { "shima" => "shima.jin@icloud.com" }
 
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "9.0"
 
   s.source = { :git => "https://github.com/shima11/PinCodeInputView.git", :tag => "#{s.version}"}
 
